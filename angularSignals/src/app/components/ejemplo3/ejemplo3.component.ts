@@ -18,4 +18,9 @@ import { FloatLabel } from 'primeng/floatlabel';
 export class Ejemplo3Component {
   campoHtml = signal('');
 
+  updateCampo(texto: string){
+    this.campoHtml.set(texto);
+  }
+
+
 }

@@ -39,6 +39,12 @@ export class MenuComponent implements OnInit {
           RouterLink: 'ejemplo3'
         },
 
+        {
+          label: 'Ejemplo 4'
+          icon: 'pi pi-wave-pulse'
+          RouterLink: 'ejemplo4'
+        },
+
       ]
       
       },

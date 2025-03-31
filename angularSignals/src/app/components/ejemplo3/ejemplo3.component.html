@@ -4,7 +4,13 @@
         <ng-template #title> Ejemplo 3 de señales </ng-template>
         <ng-template #subtitle> Señales conectadas a un input </ng-template>
         <p>
-            
+             <p-floatlabel variant="in">
+                <input pInpuText id="in_label" autocomplete="off" #esteInput(input)="updateCampo(esteInput.value)"/>
+                <lavel for=" in_label">Ingrese un texto</lavel>
+             </p-floatlabel>
+        </p>
+        <p>
+            Datos del campo:  {{ campoHtml() }}
         </p>
      </p-card>
 </div>
